@@ -1,10 +1,14 @@
 # Reverse proxy security for Kafka and others
 
+![Reverse proxy](http://www.loadbalancer.org/blog/content/images/2017/08/DMZ-comic-final.jpg "reverse proxy")
+
+
 There are many situations were more specific security measures are not available to protect a component, for example this use to happen in the early days of Elasticsearch, when no security options were available.
+
 
 A common approach in such situations is to put a reverse proxy in front of such component, this could look something like this:
 
-REVERSE_PROXY_IP:PORT -> INSECURE_WEB_API:PORT
+> REVERSE_PROXY_IP:PORT -> INSECURE_WEB_API:PORT
 
 the reserve proxy had the main purpose of:
 
